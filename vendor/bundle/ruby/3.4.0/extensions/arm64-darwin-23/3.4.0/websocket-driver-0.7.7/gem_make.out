@@ -1,0 +1,18 @@
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+/Users/hiroen/.rbenv/versions/3.4.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-4nlp3u sitelibdir\=./.gem.20250424-55251-4nlp3u clean
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-4nlp3u sitelibdir\=./.gem.20250424-55251-4nlp3u
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-4nlp3u sitelibdir\=./.gem.20250424-55251-4nlp3u install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20250424-55251-4nlp3u
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-4nlp3u sitelibdir\=./.gem.20250424-55251-4nlp3u clean

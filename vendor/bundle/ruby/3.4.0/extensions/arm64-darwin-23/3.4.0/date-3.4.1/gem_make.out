@@ -1,0 +1,24 @@
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+/Users/hiroen/.rbenv/versions/3.4.3/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with -Werror... yes
+checking for altzone in time.h with -Werror... no
+creating Makefile
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-82xkpy sitelibdir\=./.gem.20250424-55251-82xkpy clean
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-82xkpy sitelibdir\=./.gem.20250424-55251-82xkpy
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.bundle
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-82xkpy sitelibdir\=./.gem.20250424-55251-82xkpy install
+/usr/bin/install -c -m 0755 date_core.bundle ./.gem.20250424-55251-82xkpy
+
+current directory: /Users/hiroen/hamachi/vendor/bundle/ruby/3.4.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-55251-82xkpy sitelibdir\=./.gem.20250424-55251-82xkpy clean
