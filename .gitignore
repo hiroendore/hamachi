@@ -4,31 +4,78 @@
 # belong in git's global ignore instead:
 # `$XDG_CONFIG_HOME/git/ignore` or `~/.config/git/ignore`
 
-# Ignore bundler config.
+# See https://help.github.com/articles/what-to-ignore-in-commit-messages/
+
+# Ignore bundler config
 /.bundle
 
-# Ignore all environment files.
-/.env*
-
-# Ignore all logfiles and tempfiles.
+# Ignore all logfiles and tempfiles
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
-# Ignore pidfiles, but keep the directory.
+# Ignore pidfiles
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
 
-# Ignore storage (uploaded files in development and any SQLite databases).
+# Ignore uploaded files in development
 /storage/*
 !/storage/.keep
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
 
-/public/assets
-
-# Ignore master key for decrypting credentials and more.
+# Ignore master key for decrypting credentials
 /config/master.key
+/config/credentials/*.key
+
+# Ignore asset pipeline generated files
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# Ignore node modules
+/node_modules
+
+# Ignore yarn files
+/yarn-error.log
+.yarn-integrity
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore test coverage reports
+/coverage/
+
+# Ignore database files
+*.sqlite3
+*.sqlite3-*
+*.db
+
+# Ignore package manager files
+package-lock.json
+yarn.lock
+Gemfile.lock
+
+# Ignore precompiled assets
+/public/assets
+/public/packs
+/public/packs-test
+/public/system
+
+# Ignore cache files
+.cache/
+.sass-cache/
