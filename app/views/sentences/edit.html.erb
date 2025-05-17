@@ -1,0 +1,26 @@
+<div class="min-h-screen bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="card bg-white shadow-sm">
+      <div class="card-body">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">文章の編集</h1>
+
+        <%= form_with(model: @sentence, local: true, class: "space-y-6") do |form| %>
+          <div>
+            <%= form.label :content, "文章", class: "block text-sm font-medium text-gray-700 mb-2" %>
+            <%= form.text_area :content, class: "textarea textarea-bordered w-full h-32", placeholder: "文章を入力してください" %>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <%= form.submit "更新", class: "btn btn-primary btn-sm" %>
+            <%= link_to root_path, class: "btn btn-ghost btn-sm" do %>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+              </svg>
+              キャンセル
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> 
