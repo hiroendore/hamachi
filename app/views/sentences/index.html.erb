@@ -1,5 +1,8 @@
 <div class="container mt-5">
-  <h1 class="mb-4">文章一覧</h1>
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>文章一覧</h1>
+    <%= link_to "新規作成", new_sentence_path, class: "btn btn-primary" %>
+  </div>
 
   <% if @sentences.any? %>
     <div class="list-group">

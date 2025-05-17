@@ -3,6 +3,19 @@ class SentencesController < ApplicationController
     @sentences = Sentence.all.order(created_at: :desc)
   end
 
+  def new
+    @sentence = Sentence.new
+  end
+
+  def create
+    @sentence = Sentence.new(sentence_params)
+    if @sentence.save
+      redirect_to root_path, notice: '文章を作成しました。'
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
   def edit
     @sentence = Sentence.find(params[:id])
   end
