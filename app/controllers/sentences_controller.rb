@@ -29,6 +29,12 @@ class SentencesController < ApplicationController
     end
   end
 
+  def destroy
+    @sentence = Sentence.find(params[:id])
+    @sentence.destroy
+    redirect_to root_path, notice: '文章を削除しました。'
+  end
+
   private
 
   def sentence_params
