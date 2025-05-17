@@ -3,6 +3,10 @@ class SentencesController < ApplicationController
     @sentences = Sentence.all.order(created_at: :desc)
   end
 
+  def show
+    @sentence = Sentence.find(params[:id])
+  end
+
   def new
     @sentence = Sentence.new
   end
